@@ -34,4 +34,16 @@ window.onload = () => {
     tdList.renderList();
     tdComp.getStorage();
     tdComp.renderComp();
+};
+document.querySelector('#two').onclick = () => {
+    tdList.sortAZ();
+    tdList.renderList();
+    tdComp.sortAZ();
+    tdComp.renderComp();
+}
+document.querySelector('#three').onclick = () => {
+    tdList.sortZA();
+    tdList.renderList();
+    tdComp.sortZA()
+    tdComp.renderComp();
 }

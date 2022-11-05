@@ -17,6 +17,13 @@ export class TodoList {
             this.arrList.splice(index, 1);
         }
     }
+    sortAZ() {
+        this.arrList.sort();
+    }
+    sortZA() {
+        this.arrList.sort();
+        this.arrList.reverse();
+    }
     renderList() {
         let html = this.arrList.reduce((content, list, index) => {
             return content += `

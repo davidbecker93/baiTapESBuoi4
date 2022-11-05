@@ -18,6 +18,13 @@ export class CompleteList {
             this.arrCompleted.splice(index, 1);
         }
     }
+    sortAZ() {
+        this.arrCompleted.sort();
+    }
+    sortZA() {
+        this.arrCompleted.sort();
+        this.arrCompleted.reverse();
+    }
     renderComp() {
         let html = this.arrCompleted.reduce((content, complete, index) => {
             return content += `
